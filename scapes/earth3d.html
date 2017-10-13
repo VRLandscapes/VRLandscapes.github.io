@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earth</title>
+    <meta name="description" content="Earth">
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-outline@%5E1.1.0/build/aframe-outline.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sphere src="https://cdn.glitch.com/9433b8c3-f3e2-4d59-b496-d061b83eed1f%2Fearth.jpg?1506881374370" position="0 0 -6" radius="2">
+          <a-animation attribute="rotation"
+          dur="7500"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"
+          ></a-animation>
+          <a-animation attribute="scale"
+          dur="500"
+          from="1 1 1"
+          to="1.5 1.5 1.5"
+          direction="alternate-reverse"
+          easing="linear"
+          repeat="indefinite"
+          ></a-animation>
+              <a-animation
+      attribute="material.color"
+      dur="549"
+      from="#5555ff"
+      to="#aaffaa"
+      repeat="indefinite"
+      ></a-animation>
+      </a-sphere>
+      <a-sky src="https://cdn.glitch.com/9433b8c3-f3e2-4d59-b496-d061b83eed1f%2Fimage_3771e-Leo-A.jpg?1506885110892">
+      <a-animation
+      attribute="material.color"
+      dur="666"
+      from="red"
+      to="purple"
+      repeat="indefinite"
+      ></a-animation>
+      </a-sky>
+      <a-light color="white" position="-1 0.25 0" intensity="2" penumbra="1"></a-light>
+      <a-light type="ambient" color="#777"></a-light>
+    </a-scene>
+  </body>
+</html>
